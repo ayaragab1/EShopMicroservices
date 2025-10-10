@@ -1,7 +1,10 @@
-﻿namespace Basket.Api.Models;
+﻿using Marten.Schema;
+
+namespace Basket.Api.Models;
 
 public class ShoppingCart
 {
+    //solution1 => [Identity]
     public string UserName { get; set; } = null!;
     public List<ShoppingCartItems> Items { get; set; } = new();
     public decimal TotalPrice => Items.Sum(x => x.Price * x.Quantity);
