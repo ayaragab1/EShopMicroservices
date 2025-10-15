@@ -18,13 +18,13 @@ public class Order :Aggregate<OrderId>
     }
 
     //Create or Update Order
-    public static Order Create(CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment)
+    public static Order Create(OrderId id, CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment)
     {
         //we don't add validations here because we are using ValueObjects that already have their own validations
 
         var order = new Order
         {
-            Id = OrderId.Of(Guid.NewGuid()),
+            Id =id,
             CustomerId = customerId,
             OrderName = orderName,
             ShippingAddress = shippingAddress,

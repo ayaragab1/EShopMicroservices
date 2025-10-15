@@ -11,7 +11,10 @@ public static class DependencyInjection
     public static WebApplication UseApiServices(this WebApplication app)
     {
         //app.MapCarter();
+        //Auto migrate database
         
+        
+
         return app;
     }
 }
