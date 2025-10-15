@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>e68a8322-82cd-43f3-b2dd-41129bb495b5</UserSecretsId>
@@ -16,8 +16,8 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.20">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
